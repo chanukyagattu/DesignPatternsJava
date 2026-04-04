@@ -1,7 +1,8 @@
 package com.java.demo.behavioural.state.solution;
 /**
  * State Pattern - Behavioral Pattern
- * 
+ * State = behavior tied to lifecycle/state machine
+ *
  * Purpose: Allows an object to alter its behavior when its internal state changes.
  * It appears as if the object changed its class.
  * 

@@ -2,6 +2,13 @@ package com.java.demo.behavioural.iterator.solution;
 
 import com.java.demo.behavioural.iterator.problem.Product;
 
+// The Iterator pattern is a design pattern that provides a way to
+// access the elements of an aggregate object sequentially without exposing
+// its underlying representation. It allows you to traverse a collection of objects
+// without needing to know the details of how the collection is implemented.
+// In this example, we have a `Products` class that contains a list of `Product` objects,
+// and we create an iterator to traverse through the products.
+
 public class IteratorPattern {
     public static void main(String[] args) {
         var products = new Products();
