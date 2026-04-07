@@ -6,7 +6,8 @@ public class ChainOfResponsibilityPattern {
 
         ExcelHandler excelHandler = new ExcelHandler(null);
         NumbersHandler numbersHandler = new NumbersHandler(excelHandler);
-        DataReader dataReader = new DataReader(numbersHandler);
-        dataReader.read(".xls");
+        QuickbooksHandler quickbooksHandler = new QuickbooksHandler(numbersHandler);
+        DataReader dataReader = new DataReader(quickbooksHandler);
+        dataReader.read(".qbw");
     }
 }
