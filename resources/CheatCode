@@ -1,0 +1,32 @@
+Creational Patterns (Object Creation)
+-------------------------------------
+Singleton - Ensure only ONE instance exists globally (e.g., database connection pool)
+Factory Method - Subclasses decide WHICH object to create (e.g., DocumentFactory → PDF/Word/Excel)
+Abstract Factory - Factory of factories - creates FAMILIES of related objects (e.g., UIFactory → Windows/Mac buttons+scrollbars)
+Builder - Construct complex objects STEP-BY-STEP with fluent API (e.g., StringBuilder, HttpRequest.newBuilder())
+Prototype - CLONE existing objects instead of creating new (e.g., object.clone())
+
+
+Structural Patterns (Object Composition)
+----------------------------------------
+Adapter - Convert one INTERFACE to another (e.g., Arrays.asList() adapts array to List)
+Bridge - SEPARATE abstraction from implementation (e.g., Remote → TV/Radio, independent hierarchies)
+Composite - TREE structure where leaf and composite treated uniformly (e.g., File/Folder hierarchy)
+Decorator - ADD behavior dynamically by WRAPPING (e.g., BufferedReader(FileReader), coffee + milk + sugar)
+Facade - Simple UNIFIED interface to complex subsystem (e.g., OrderService hides payment/inventory/shipping)
+Flyweight - SHARE common state to save memory (e.g., String pool, chess pieces sharing color/type)
+Proxy - PLACEHOLDER that controls access to real object (e.g., lazy loading, caching, access control)
+
+
+Behavioral Patterns (Object Interaction)
+----------------------------------------
+Chain of Responsibility - PASS request along handler chain until processed (e.g., logging levels, servlet filters)
+Command - ENCAPSULATE request as object with execute() (e.g., button click actions, undo/redo)
+Iterator - TRAVERSE collection without exposing internals (e.g., for-each, List.iterator())
+Mediator - CENTRALIZE complex communications (e.g., chat room coordinates user messages)
+Memento - CAPTURE object state for undo/restore (e.g., editor snapshots, game save points)
+Observer - NOTIFY multiple objects when state changes (e.g., event listeners, pub-sub, MVC)
+State - CHANGE behavior when internal state changes (e.g., TCP connection: Listen/Established/Closed)
+Strategy - SWAP algorithms at runtime (e.g., Collections.sort(comparator), payment methods)
+Template Method - DEFINE skeleton, subclasses override steps (e.g., AbstractList, Spring's JdbcTemplate)
+Visitor - ADD new operations without modifying classes (e.g., AST traversal, tax calculation on different products)
