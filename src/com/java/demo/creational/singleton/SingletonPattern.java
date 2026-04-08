@@ -7,5 +7,11 @@ public class SingletonPattern {
 
         Logger log2 = Logger.getInstance();
         System.out.println(log2.getFileName());
+
+        BillPughSingleton singleton1 = BillPughSingleton.getInstance();
+        singleton1.setName("BillPughSingleton Instance");
+
+        BillPughSingleton singleton2 = BillPughSingleton.getInstance();
+        System.out.println(singleton2.getName());
     }
 }
