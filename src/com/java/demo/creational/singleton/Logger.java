@@ -11,10 +11,6 @@ public class Logger {
 
     private Logger() {}
 
-    public Logger(String fileName) {
-        this.fileName = fileName;
-    }
-
     public void write(String message) {
         this.fileName = message;
         System.out.println("Writing a message to the log. " + fileName);
